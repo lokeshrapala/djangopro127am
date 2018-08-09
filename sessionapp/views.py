@@ -14,7 +14,9 @@ def display(request):
         z = request.session['z']
         return HttpResponse(z)
     else:
+        print("end")
         return render(request,'base.html')
+
 
 
 
